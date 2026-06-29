@@ -1,7 +1,7 @@
 # BoredomStudy
 we set up a positron system for the boredom study to follow along and work in later in the project
 
-This is some new information after setting up the online repo.
+This is some new information after setting up the online repo. Its name is origin. So if I push my local main online, it should update the origin/main.
 
 ---
 Github as version control for all the stuff that we change on a regular basis
