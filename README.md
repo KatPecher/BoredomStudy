@@ -1,6 +1,8 @@
 # BoredomStudy
 we set up a positron system for the boredom study to follow along and work in later in the project
 
+This is some new information after setting up the online repo.
+
 ---
 Github as version control for all the stuff that we change on a regular basis
 dvc is a second level of version control for data that we barely touch, like raw data
