@@ -10,4 +10,4 @@ library(tidyr)
 library(rio)
 library(ggplot2)
 library(lubridate)
-
+library(purrr)
