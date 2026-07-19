@@ -1,6 +1,22 @@
 + AN07IE11 - Participant ID that is not written fully in the Limesurvey. Participant is male, 24 and was in on the 16.06.
-+ DO13UE03 - Limesurvey crashed after page 13
++ DO13UE03 - Limesurvey crashed after page 13, No VR data, dropping whole subject
 
 - Balance Data, wait on Lorenz
+#  # Create reference for subject IDs ====
+#  trialorder <- import("data/raw/Boredom Balance TrialOrder.xlsx")
+#
+#  #delete stray value at end of table and shrink to actual values
+#  trialorder[dim(trialorder)[1],dim(trialorder)[2]] <- NA
+#  trialorder <- trialorder [rowSums(!is.na(trialorder)) > 0,
+#    colSums(!is.na(trialorder)) > 0]
+#
+#  # Fix missing and missspelled subject IDs, standarize the use of Umlaute in IDs
+#  trialorder[trialorder$`Subject ID` == "DI16UB31", "Subject ID"] <- "DI16ÜB31"
+#  trialorder[trialorder$`Subject ID` == "D011ÜB30", "Subject ID"] <- "DO11UB30"
+# 
 
-- PsychoPy Data, figure out what I need and how to do
+
+- PsychoPy Data, figure out how to do import the files in a way that makes sense and is usable
+
+
+- Limesurvey, rename Versuchspersonencode to Subject ID, to be inline with balance and PsychoPy measures
